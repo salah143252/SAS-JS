@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajouter-livre.css">
+    <title>إضافة كتاب</title>
+</head>
+<body>
+
+    <h1>Ajouter un nouveau livre</h1>
+
+    <form id="form-ajout">
+        <div>
+            <label for="titre">Titre du livre :</label>
+            <input type="text" id="titre">
+        </div>
+        
+
+        <div>
+            <label for="annee">Année de parution</label>
+            <input type="number" id="annee" required>
+        </div>
+
+        <div>
+            <label for="auteur">Auteur :</label>
+             <input type="text" id="auteur">
+        </div>
+
+
+        <div>
+            <label for="code">Code :</label>
+            <input type="text" id="code">
+        </div>
+        
+        <div>
+            <label for="prix">Prix :</label>
+            <input type="number" id="prix">
+        </div>
+          
+         <div>
+         <label for="disponible">Disponible</label>
+            <select id="disponible" required>
+                <option value="true">Oui</option>
+                <option value="false">Non</option>
+            </select>
+        </div>
+
+        <button type="submit">Ajouter</button>
+    </form>
+        
+
+<a href="catalogue.html"> Aller au catalogue des livres</a>
+<script src="ajouter-livre.js"></script>
+</body>
+</html>
